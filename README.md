@@ -1,6 +1,6 @@
 # Creating a AWS ElastiCache for Redis with a Bastion Host
 
-This example show how to create a bastion host for a Redis server created on AWS using ElastiCache. Using a bastion host along with your Redis server is useful for troubleshooting purposes, where a developer can easily access the server otherwise only available for any service running in the same private subnet of Redis. To allow easy access of Redis, the bastion host created has the `redis-cli` tool installed by default.
+This example show how to create a bastion host for a Redis server created on AWS using ElastiCache. Using a bastion host along with your Redis server is useful for troubleshooting purposes, where developers can easily access the Redis server otherwise only accessible by any service _running in the same private subnet_ of Redis. To allow access to Redis, the bastion host created has the `redis-cli` CLI installed by default.
 
 ## Steps to use this example:
 
