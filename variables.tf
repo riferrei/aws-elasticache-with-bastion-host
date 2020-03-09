@@ -15,10 +15,6 @@ variable "global_prefix" {
   default = "terraform"
 }
 
-data "aws_availability_zones" "available" {
-  state = "available"
-}
-
 variable "private_cidr_blocks" {
   type = list(string)
   default = [

@@ -40,6 +40,10 @@ resource "aws_route_table" "private_route_table" {
   }
 }
 
+data "aws_availability_zones" "available" {
+  state = "available"
+}
+
 resource "aws_subnet" "cache_server" {
   vpc_id = aws_vpc.aws_vpc.id
   count = length(data.aws_availability_zones.available.names)
