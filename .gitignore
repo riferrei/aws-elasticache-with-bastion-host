@@ -5,6 +5,10 @@
 *.tfstate
 *.tfstate.*
 
+# Local files
+variables.auto.tfvars
+cert.pem
+
 # Crash log files
 crash.log
 
